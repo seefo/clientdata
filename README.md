@@ -1,18 +1,28 @@
-# Clientdata Repository
+# README
 
-This is the server side client data repo ONLY. DO NOT include files in this repo that would normally be used ONLY on the client side.  Store only files necessary for the SERVER operation here.  This would exclude files like sound files and MOST appearance files that do not have collision.
+This repo is for the CLIENT SIDE ONLY (i.e. this is NOT to be installed ON the server, only in your SWG Client folder) assets that were added since 1.2.  If you would like to make a pull request, please do not add any new .tre files. Please just work with the plain directory structure for now. Thanks!
 
-OPTIONAL: Compile into SOT files (see tre-sot-builders repo or ask Erusman - thanks dude!). Alternatively, use as-is.
+## Instructions:
 
-# Usage
+You can download the v1.2.1 client from [here](https://bit.ly/SWGSourceClient121).
 
-You should 
+If you haven't already, please install Git for Windows https://git-scm.com/download/win
 
-    cd /path/to/swg/data/sku.0/sys.client/compiled
+You may now get updates to your client by opening a Git Bash in your client folder and running:
 
-Then clone this repo. You should also remove any other sku.[1-3] or sku.ja folders you may have inside data, as those are also client only. You'll then need to edit your exe/shared/servercommon.cfg to remove those old, dead paths.
+	git pull
 
-# Useful Changes Appreciated
+## Instructions (v1.2):
+If you have the SWG Source Client v1.2, you can configure it to recieve updates
 
-If you make any useful changes or improvements, put in a pull request/merge request and I'll merge it in, and you'll become a contributor!
+If you haven't already, please install Git for Windows https://git-scm.com/download/win
 
+Open a Git Bash in your client folder. Run the following commands: (For v1.2 only.)
+
+	git init .
+	git remote add -f origin https://github.com/SWG-Source/client-assets.git
+	git checkout master
+
+You may now get updates to your client by opening a Git Bash and running:
+
+	git pull
